@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shark</string>
+    <string name="title_activity_main">GalaxyShark Free</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_text_1">Tap left side to boost,</string>
+    <string name="menu_text_2">Press and hold right side to rise</string>
+    <string name="menu_text_3">Touch anywhere to begin!</string>
+    <string name="end_text_1">Your score was:</string>
+    <string name="end_text_2">High score was:</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="AdUnitId">ca-app-pub-5050157874094826/5183143193</string>
+
+</resources>

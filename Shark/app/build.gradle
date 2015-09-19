@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'testSharkKey'
+            keyPassword 'testSharkPassword'
+            storeFile file('C:/Users/Nick/AndroidKeys/testAndroidKey.jks')
+            storePassword 'testAndroidPassword'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion "20.0.0"
+    defaultConfig {
+        applicationId "com.birch.shark"
+        minSdkVersion 9
+        targetSdkVersion 20
+        versionCode 2
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.google.android.gms:play-services:7.0.0'
+    compile 'com.android.support:appcompat-v7:22.0.0'
+}
